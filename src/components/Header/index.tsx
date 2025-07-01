@@ -1,8 +1,5 @@
 import { NavLink } from "react-router-dom"
 import "./styles.css"
-import githubImg from "./assets/github.svg"
-import linkedinImg from "./assets/linkedin.svg"
-import instagramImg from "./assets/instagram.svg"
 
 function Header() {
   return (
@@ -17,9 +14,7 @@ function Header() {
           <NavLink className="nav-link" to="404 notfound">404 test</NavLink>
         </nav>
         <div className="header-social">
-          <img src={githubImg} alt="" />
-          <img src={linkedinImg} alt="" />
-          <img src={instagramImg} alt="" />
+          <p>fale comigo</p>
         </div>
       </header>
     </>

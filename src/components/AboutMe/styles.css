@@ -1,0 +1,70 @@
+/* Seção about me */
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container geral about-me */
+.about-me-container {
+  display: flex;
+  width: 80vw;
+  height: 30vh;
+  flex-direction: row;
+  padding: 5px;
+  background-color: rgb(32, 32, 32);
+  color: rgb(222, 222, 222);
+  border-radius: 5px;
+  border: rgb(65, 65, 65) solid 2px;
+}
+
+.container-left {
+  width: 30%;
+  min-width: 250px;
+  padding: 10px;
+  background-color: rgb(32, 32, 32);
+}
+
+.container-left img {
+  width: 100%;
+  height: auto;
+}
+
+.container-right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(32, 32, 32);
+}
+
+.container-right h3 {
+  background-color: rgb(32, 32, 32);
+}
+
+.container-right p {
+  background-color: rgb(32, 32, 32);
+}
+
+/* Container de botões para redes sociais */
+.social-icons {
+  display: flex;
+  justify-content: end;
+  background-color: rgb(32, 32, 32);
+}
+
+.social-icons img {
+  background-color: rgb(32, 32, 32);
+  width: 48px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 3px;
+  border: 2px solid rgb(65, 65, 65);
+  border-radius: 5px;
+}
+
+.social-icons img:hover {
+  border: 2px solid rgb(0, 144, 211);
+}
