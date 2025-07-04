@@ -6,6 +6,7 @@ import PageNotFound from './Pages/NotFound'
 import ProjectsPage from './Pages/Projects'
 import AboutPage from './Pages/About'
 import AbilityesPage from './Pages/Abilityes'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 

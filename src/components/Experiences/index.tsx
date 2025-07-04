@@ -1,32 +1,28 @@
 import { useState } from 'react';
 import './styles.css'
+import { experiencesContents } from './experiences';
+import { experiencesButtonStyle, experiencesContainerStyle, experiencesContentStyle, experiencesMenuStyle, experiencesSectionStyle } from './styles';
 
 function ExperiencesSection() {
-  const experiencesContents = [
-    { title: 'Experiência 1', content: 'Conteúdo da Experiência 1' },
-    { title: 'Experiência 2', content: 'Conteúdo da Experiência 2' },
-    { title: 'Experiência 3', content: 'Conteúdo da Experiência 3' },
-    { title: 'Experiência 4', content: 'Conteúdo da Experiência 4' },
-    { title: 'Experiência 5', content: 'Conteúdo da Experiência 5' }
-  ]
 
-  const [ExperienceShow, setExperienceShow] = useState('')
+  const [ExperienceShow, setExperienceShow] = useState('teste')
 
   return (
-    <section className="experiences-section">
-      <div className="experiences-container">
-        <div className="experiences-menu">
+    <section className={`${experiencesSectionStyle}`}>
+      <h1>Minhas experiências</h1>
+      <div className={experiencesContainerStyle}>
+        <div className={experiencesMenuStyle}>
           {experiencesContents.map((experience, index) => (
             <button
               onClick={() => setExperienceShow(experience.content)}
               key={index}
-              className="experiences-menu-button">
+              className={`${experiencesButtonStyle} test-button`}>
               {experience.title}
             </button>
           ))}
         </div>
-        <div className="experiences-content">
-          <p>{ExperienceShow}</p>
+        <div className={experiencesContentStyle}>
+          <p className='w-100'>{ExperienceShow}</p>
         </div>
       </div>
     </section>
